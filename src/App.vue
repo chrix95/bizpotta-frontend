@@ -1,12 +1,24 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <Preloader />
+    <Navigation />
+    <router-view />
+    <FooterComponent />
   </div>
 </template>
+<script>
+import FooterComponent from "@/components/_partials/Footer";
+import Preloader from "@/components/_partials/Preloader";
+import Navigation from "@/components/_partials/Navigation";
+export default {
+  name: "App",
+  components: {
+    FooterComponent,
+    Preloader,
+    Navigation,
+  },
+};
+</script>
 
 <style>
 #app {

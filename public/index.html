@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#ffe3e3" />
+    <!--website-favicon-->
+    <link href="<%= BASE_URL %>images/logo.png" rel="icon" />
+    <!--plugin-css-->
+    <link href="<%= BASE_URL %>css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<%= BASE_URL %>css/plugin.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- template-style-->
+    <link rel="stylesheet" href="<%= BASE_URL %>css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/owlcarousel/owl.theme.default.min.css">
+    <link href="<%= BASE_URL %>css/style.css" rel="stylesheet" />
+    <link href="<%= BASE_URL %>css/responsive.css" rel="stylesheet" />
+    <link href="<%= BASE_URL %>css/custom.css" rel="stylesheet" />
   </head>
   <body>
     <noscript>
@@ -13,5 +28,15 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <a id="scrollUp" href="#top"></a>
+    <script src="<%= BASE_URL %>js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="<%= BASE_URL %>js/jquery.min.js"></script>
+    <script src="<%= BASE_URL %>js/bootstrap.min.js"></script>
+    <script src="<%= BASE_URL %>js/popper.min.js"></script>	
+    <script src="<%= BASE_URL %>js/plugin.min.js"></script>
+    <script src="<%= BASE_URL %>js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="<%= BASE_URL %>js/preloader.js"></script>
+    <script src="<%= BASE_URL %>js/main.js"></script>
+    <script src="<%= BASE_URL %>js/custom.js"></script>
   </body>
 </html>
