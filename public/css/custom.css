@@ -116,6 +116,10 @@ a.btn.btn-download-now-white {
     font-size: 15px;
     width: 85%;
     margin-bottom: 30px;
+    color: #fff;
+}
+.common-heading p.welcome {
+    color: #666;
 }
 .social-link {
     margin-top: 30px;
@@ -412,6 +416,9 @@ a.btn.btn-contact-download-now-black {
     margin: 15px auto;
     color: #fff;
 }
+.carousel-caption.d-none.d-md-block p {
+    color: #fff;
+}
 .carousel-caption.d-none.d-md-block .buttons-groups {
     margin: 20px auto;
 }
@@ -524,6 +531,9 @@ a.btn.btn-normal.btn-filled {
 /* footer */
 .footer-row2 {
     background: #517FD9;
+    color: #fff;
+}
+.footer-row2 p {
     color: #fff;
 }
 .footer-row2 h5 {
