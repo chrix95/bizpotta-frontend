@@ -4,33 +4,30 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo">
-					<a class="nav-brand" href="index.html">
+					<router-link to="/" class="nav-brand" >
 						<img src="images/logo-white.svg" alt="Logo" class="mega-white-logo" />
 						<img src="images/logo.png" alt="Logo" class="mega-darks-logo" />
-					</a>
+					</router-link>
 				</div>
 				<div class="custom-nav" role="navigation">
 					<ul class="nav-list">
-						<li class="sbmenu active">
-                            <router-link to="/" class="menu-links">Home</router-link>
+						<li class="sbmenu" :class="[currentRoute === 'About' ? 'active' : '']">
+                            <router-link to="/about" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageColor' : '']">About</router-link>
 						</li>
-						<li class="sbmenu">
-                            <router-link to="/about" class="menu-links">About</router-link>
+						<li class="sbmenu" :class="[currentRoute === 'Hub' ? 'active' : '']">
+                            <router-link to="/hub" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageColor' : '']">Hub</router-link>
 						</li>
-						<li class="sbmenu">
-                            <router-link to="/hub" class="menu-links">Hub</router-link>
+						<li class="sbmenu" :class="[currentRoute === 'Learning' ? 'active' : '']">
+                            <router-link to="/learning" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageColor' : '']">Learning</router-link>
 						</li>
-						<li class="sbmenu">
-                            <router-link to="/learning" class="menu-links">Learning</router-link>
+						<li class="sbmenu" :class="[currentRoute === 'Funds' ? 'active' : '']">
+                            <router-link to="/funds" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageColor' : '']">Funds</router-link>
 						</li>
-						<li class="sbmenu">
-                            <router-link to="/funds" class="menu-links">Funds</router-link>
-						</li>
-						<li class="sbmenu">
-                            <router-link to="/contact" class="menu-links">Contact us</router-link>
+						<li class="sbmenu" :class="[currentRoute === 'Contact' ? 'active' : '']">
+                            <router-link to="/contact" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageColor' : '']">Contact us</router-link>
 						</li>
 						<li class="header">
-                            <router-link to="/login" class="menu-links">Sign In</router-link>
+                            <router-link to="/login" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageLinkColor' : '']">Sign In</router-link>
                             <router-link to="/register" class="menu-links btn btn-download-now-black">Sign Up</router-link>
 						</li>
 					</ul>
@@ -81,9 +78,24 @@
 <script>
 export default {
     name: "Navigation",
-    components: {}
+    components: {},
+	computed: {
+		currentRoute() {
+			return this.$route.name
+		}
+	},
+	mounted() {
+	},
+	data() {
+		return {}
+	}
 }
 </script>
 <style scoped>
-
+.subpageColor {
+	color: #000 !important;
+}
+.subpageLinkColor {
+	color: #517fd9 !important;
+}
 </style>
