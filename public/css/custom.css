@@ -26,6 +26,13 @@
 .mt-50 {
     margin-top: 50px;
 }
+.mb-50 {
+    margin-bottom: 50px;
+}
+.in-numbers {
+    background: #fff;
+    padding: 80px;
+}
 .hero-bg-bg1:before {
     background: none;
     position: absolute;
@@ -39,11 +46,11 @@
     background: url(../images/icons/caret-up-icon.svg) center center no-repeat;
     bottom: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 100px;
+    width: 35px;
+    height: 37px;
     border-radius: 100px;
-    color: #fff;
+    -webkit-border-radius: 100px;
+    background-color: #68ab27;
     opacity: 1;
 }
 .bg-gradient1 {
@@ -61,17 +68,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-heading h1 {
     font-size: 50px;
-    line-height: 65px;
-    font-weight: 400;
+    line-height: 55px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 .header-heading span {
-    color: #2b2b2b;
+    color: #517FD9;
 }
 .header-heading p {
-    font-size: 15px;
+    font-size: 21px;
     line-height: 25px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 .custom-nav .nav-list li a.menu-links {
     font-size: 16px;
@@ -106,11 +114,12 @@ a.btn.btn-download-now-white {
 }
 .common-heading h3 {
     font-weight: 400px;
-    font-size: 30px;
+    font-size: 40px;
 }
 .common-heading h2 {
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 40px;
 }
 .common-heading p {
     font-size: 15px;
@@ -184,7 +193,7 @@ a.btn.btn-download-now-white {
     box-shadow: none;
 }
 .s-block h4 {
-    font-size: 20px;
+    font-size: 27px;
 }
 .s-block p {
     font-size: 13px;
@@ -342,18 +351,20 @@ a.btn.btn-why-download-app-now-black {
     font-weight: 600;
 }
 .about-agency.sub-pages:before {
-    background: none;
+    background: url(../images/vector-background.svg);
     position: absolute;
     height: 100%;
     top: 0;
+    background-color: #fcfafb;
 }
 .hero-section.sub-pages.about-background.bg-gradient1 {
     background: #ffe2e2;
     background: -moz-linear-gradient(top,#ffe2e2 0,#fff9f4 100%);
     background: -webkit-linear-gradient(top,#ffe2e2 0,#fff9f4 100%);
     background: linear-gradient(to bottom,#ffe2e2 0,#fff9f4 100%);
-    background-image: url(../images/template/about-background.png);
+    background-image: url(../images/abstract-circles.jpg);
     background-size: cover;
+    height: 600px;
 }
 /* End About us section */
 /* Contact us section */
@@ -488,6 +499,16 @@ a.btn.btn-normal.btn-filled {
     background: #FCFBFB;
     position: relative;
 }
+.s-block a {
+    font-weight: 600;
+    font-size: 15px;
+}
+.common-heading.how p {
+    color: #666;
+    font-size: 19px;
+    margin-top: 15px;
+    width: 100%;
+}
 .s-block.blue {
     border-top: 4px solid #517FD9;
 }
@@ -500,6 +521,21 @@ a.btn.btn-normal.btn-filled {
     right: 7%;
     font-size: 32px;
     font-weight: 100;
+}
+.s-block.up-hor.newlemon {
+    box-shadow: 0px 2px 8px #68AB27;
+}
+.s-block.up-hor.newblue {
+    box-shadow: 0px 2px 8px #517FD9;
+}
+.s-block.up-hor p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.s-block.up-hor h4 {
+    margin: 25px auto;
+    font-weight: bold;
+    font-size: 45px;
 }
 .w-block {
     background: right top / 200% no-repeat rgb(252, 251, 251);
@@ -521,12 +557,14 @@ a.btn.btn-normal.btn-filled {
 .quote {
     border-left: 4px solid #68AB27;
 }
-.owl-carousel.owl-theme.testimonial .items h5.name {
+.owl-carousel.owl-theme .items h5.name {
     text-align: left;
+    color: #517FD9;
 }
-.owl-carousel.owl-theme.testimonial .items p.designation {
+.owl-carousel.owl-theme .items p.designation {
     text-align: left;
     font-size: 14px;
+    font-weight: bold;
 }
 /* footer */
 .footer-row2 {
