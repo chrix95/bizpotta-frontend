@@ -21,4 +21,10 @@ export default {
 .owl-dots, .owl-nav {
   display: none !important;
 }
+.grey-background {
+  background: #eff0f8;
+}
+.white-background {
+  background: #fff;
+}
 </style>

@@ -28,7 +28,7 @@ const routes = [
     path: '/learning',
     name: 'Learning',
     component: function () {
-      return import('../views/About.vue')
+      return import('../views/Learning.vue')
     }
   },
   {
@@ -69,6 +69,7 @@ const router = new VueRouter({
 })
 
 router.afterEach((to, from) => {
+  document.title = `Bizpotta | ${to.name}`
   window.scroll(0, 0)
 })
 

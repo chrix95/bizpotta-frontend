@@ -23,6 +23,18 @@
 .mt-15 {
     margin-top: 15px;
 }
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
 .mt-50 {
     margin-top: 50px;
 }
@@ -50,7 +62,7 @@
     height: 37px;
     border-radius: 100px;
     -webkit-border-radius: 100px;
-    background-color: #68ab27;
+    background-color: #517fd9;
     opacity: 1;
 }
 .bg-gradient1 {
