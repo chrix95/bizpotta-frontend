@@ -277,7 +277,7 @@
         <div class="row justify-content-center mb-30">
           <div class="col-lg-8">
             <div class="common-heading">
-              <h3 class="mb-10" style="color: #517fd9">Bizpotta Masterclass</h3>
+              <h3 class="mb-10 code-blue">Bizpotta Masterclass</h3>
               <span
                 >Connect with established entrepreneurs with results to show in
                 their business journey and draw from their fountain of

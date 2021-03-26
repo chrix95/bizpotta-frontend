@@ -35,7 +35,7 @@ const routes = [
     path: '/funds',
     name: 'Funds',
     component: function () {
-      return import('../views/About.vue')
+      return import('../views/Funds.vue')
     }
   },
   {
