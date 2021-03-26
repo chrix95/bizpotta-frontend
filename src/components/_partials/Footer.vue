@@ -50,17 +50,27 @@
 					<div class="col-lg-3 col-sm-6">
 						<h5>Quick Links</h5>
 						<ul class="footer-address-list link-hover">
-							<li><a href="about.html">About</a></li>
-							<li><a href="javascript:void(0)">Hub</a></li>
-							<li><a href="javascript:void(0)">Learning</a></li>
-							<li><a href="javascript:void(0)">Funds</a></li>
-							<li><a href="javascript:void(0)">Contact</a></li>
+							<li>
+								<router-link to="/about">About</router-link>
+							</li>
+							<li>
+								<router-link to="/hub">Hub</router-link>
+							</li>
+							<li>
+								<router-link to="/learning">Learning</router-link>
+							</li>
+							<li>
+								<router-link to="/funds">Funds</router-link>
+							</li>
+							<li>
+								<router-link to="/contact">Contact</router-link>
+							</li>
 						</ul>
 					</div>
 					<div class="col-lg-2 col-sm-6">
 						<h5>Company</h5>
 						<ul class="footer-address-list link-hover">
-							<li><a href="get-quote.html">BizDoctor</a></li>
+							<li><a href="javascript:void(0)">BizDoctor</a></li>
 							<li><a href="javascript:void(0)">Terms</a></li>
 							<li><a href="javascript:void(0)">Legal</a></li>
 							<li><a href="javascript:void(0)">Privacy Policy</a></li>

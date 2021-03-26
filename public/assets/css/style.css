@@ -342,15 +342,15 @@ a.return-btn {
   left: 6%;
   top: 37%;
   transform: translate(50%, -37%);
-  font-size: 30px;
+  font-size: 25px;
   color: #C4C4C4;
 }
 .fa.fa-mobile.inset-icon {
   position: absolute;
-  left: 7%;
+  left: 8%;
   top: 37%;
   transform: translate(50%, -37%);
-  font-size: 40px;
+  font-size: 35px;
   color: #C4C4C4;
 }
 .w3l-login-6 .form-right,
@@ -569,7 +569,7 @@ a.return-btn {
 /*//copy-right*/
 @media (min-width: 1500px) {
   .w3l-login-6 .form-left {
-    padding: 100px 150px;
+    padding: 100px 120px;
   }
 }
 @media (max-width: 1080px) {

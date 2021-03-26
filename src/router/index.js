@@ -42,7 +42,7 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: function () {
-      return import('../views/About.vue')
+      return import('../views/Contact.vue')
     }
   },
   {
