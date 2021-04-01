@@ -199,7 +199,7 @@
         <div class="-cta-btn mt70">
           <div
             class="free-cta-title v-center"
-            data-wow-delay="1.4s"
+            data-wow-delay=".4s"
           >
             <a href="#" class="btn btn-lg btn-normal blue access-masterclass">
               Start your learning journey
@@ -350,7 +350,7 @@
         <div class="-cta-btn mt70">
           <div
             class="free-cta-title v-center wow zoomInDown"
-            data-wow-delay="1.4s"
+            data-wow-delay=".4s"
           >
             <a href="#" class="btn btn-lg btn-normal blue access-masterclass">
               Access all masterclasses

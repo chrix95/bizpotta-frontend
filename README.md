@@ -1,4 +1,4 @@
-# scaffold
+# Bizpotta
 
 ## Project setup
 ```
