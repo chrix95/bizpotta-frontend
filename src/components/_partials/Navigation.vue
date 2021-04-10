@@ -5,8 +5,8 @@
 			<div class="menu-header">
 				<div class="dsk-logo">
 					<router-link to="/" class="nav-brand" >
-						<img src="images/logo-light.svg" alt="Logo" class="mega-darks-logo" />
-						<img src="images/logo.png" alt="Logo" class="mega-white-logo" />
+						<img src="images/logo-light.svg" alt="Logo" class="mega-darks-logo" v-if="scrollPos < 75"/>
+						<img src="images/logo.png" alt="Logo" class="mega-darks-logo" v-else />
 					</router-link>
 				</div>
 				<div class="custom-nav" role="navigation">
@@ -85,9 +85,14 @@ export default {
 		}
 	},
 	mounted() {
+		setInterval(() => {
+			this.scrollPos = this.$window.scrollY
+		}, 10);
 	},
 	data() {
-		return {}
+		return {
+			scrollPos: 0
+		}
 	}
 }
 </script>
