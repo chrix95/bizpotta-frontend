@@ -28,7 +28,7 @@
             />
             <div class="carousel-caption d-none d-md-block">
               <h5>
-                The one-stop-shop for your business and startup solutions.
+                The one-stop-shop for your business <br> and startup solutions.
               </h5>
               <p>
                 We empower entrepreneurs with skills and resources <br />
@@ -168,9 +168,9 @@
               <h3>Bizpotta platform</h3>
               <p class="welcome">
                 <br />
-                <strong
-                  >Africa’s first Integrated Business Solutions Portal</strong
-                >
+                <span>
+                  <strong>Africa’s first Integrated Business Solutions Portal</strong>
+                </span>
                 <br />
                 We believe in building and empowering businesses for success,
                 growth and sustenability through knowledge acquisition,
@@ -189,13 +189,13 @@
     <!-- Business Solution -->
     <section
       class="bhv-service bg-gradient5 pad-tb"
-      style="background: #fcfbfb"
+      style="background: rgba(81, 127, 217, 0.08)"
     >
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="common-heading">
-              <span style="color: #517fd9">Our</span>
+              <span style="color: rgba(19, 17, 79, 1)">Our</span>
               <h2 class="mb30">Business Solutions</h2>
             </div>
           </div>
@@ -206,7 +206,7 @@
             data-wow-delay=".4s"
           >
             <div
-              class="s-block blue"
+              class="h-100 s-block blue"
               data-tilt
               data-tilt-max="4"
               data-tilt-speed="1000"
@@ -231,7 +231,7 @@
             data-wow-delay=".4s"
           >
             <div
-              class="s-block lemon"
+              class="h-100 s-block lemon"
               data-tilt
               data-tilt-max="4"
               data-tilt-speed="1000"
@@ -256,7 +256,7 @@
             data-wow-delay=".4s"
           >
             <div
-              class="s-block blue"
+              class="h-100 s-block blue"
               data-tilt
               data-tilt-max="4"
               data-tilt-speed="1000"
@@ -294,32 +294,32 @@
               <div class="row justify-content-center">
                 <div class="col-lg-6">
                   <div class="w-block lemon">
-                    <h6>Business planning</h6>
+                    <h6 class="code-lemon">Business planning</h6>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="w-block blue">
-                    <h6>Vocational education</h6>
+                    <h6 class="code-blue">Vocational education</h6>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="w-block blue">
-                    <h6>Business masterclass</h6>
+                    <h6 class="code-blue">Business masterclass</h6>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="w-block lemon">
-                    <h6>Business registration</h6>
+                    <h6 class="code-lemon">Business registration</h6>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="w-block lemon">
-                    <h6>Legal and tax</h6>
+                    <h6 class="code-lemon">Legal and tax</h6>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="w-block blue">
-                    <h6>Access to funding</h6>
+                    <h6 class="code-blue">Access to funding</h6>
                   </div>
                 </div>
               </div>

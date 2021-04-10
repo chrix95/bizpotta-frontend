@@ -13,11 +13,11 @@
                 </h1>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
                   Set your business apart from competitors by gaining the
-                  knowledge that gives you the winning edge and makes you better
+                  knowledge <br> that gives you the winning edge and makes you better
                   by far.
                 </p>
                 <div class="buttons-groups">
-                  <a href="#" class="btn btn-lg btn-normal btn-filled">
+                  <a href="#" class="btn btn-lg btn-normal btn-filled blue-fill">
                     Get Started
                   </a>
                 </div>
@@ -32,7 +32,7 @@
         <div class="row mb-50">
           <div class="col-lg-6 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Bizpotta Learning Institute</h3>
+              <h3 class="mb-10 code-blue">Bizpotta Learning Institute</h3>
               <p>
                 The Bizpotta Learning Institute is a massive business and
                 vocational education platform designed to help entrepreneurs
@@ -78,7 +78,7 @@
           </div>
           <div class="col-lg-6 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Vocational Education</h3>
+              <h3 class="mb-10 code-lemon">Vocational Education</h3>
               <p>
                 Bizpotta gives you access to an array of resources designed to
                 take your career and vocational training to the next level.
@@ -89,7 +89,7 @@
                 Begin your skill acquisition journey with a wide array of
                 resources and increase your value in the marketplace.
               </p>
-              <a href="#" class="btn btn-lg btn-normal blue">
+              <a href="#" class="btn btn-lg btn-normal lemon">
                 Start your learning journey
               </a>
             </div>
@@ -102,7 +102,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="common-heading">
-              <h3 class="mb-10" style="color: #517fd9">Available Courses</h3>
+              <h3 class="mb-10" style="color: rgba(19, 17, 79, 1)">Available Courses</h3>
               <span
                 >See a section of some of the courses available in the Bizpotta
                 learning Institute.</span
@@ -213,7 +213,7 @@
         <div class="row mb-50 justify-content-center">
           <div class="col-lg-6 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Bizpotta Certificate Program</h3>
+              <h3 class="mb-10 code-lemon">Bizpotta Certificate Program</h3>
               <p>
                 Bizpotta gives you access to an array of resources designed to
                 take your career and vocational training to the next level.
@@ -251,7 +251,7 @@
           </div>
           <div class="col-lg-6 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Bizpotta Incubation Program</h3>
+              <h3 class="mb-10 code-blue">Bizpotta Incubation Program</h3>
               <p>
                 This bespoke programme is designed for entrepreneurs who are
                 working on Start-ups or looking to give life to ambitious new
@@ -373,13 +373,13 @@ export default {
   color: #666;
 }
 .common-heading.how > span {
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
 }
 .btn.btn-lg.btn-normal.blue {
   background: transparent;
-  border: 2px solid #517fd9;
+  border: 2px solid rgba(19, 17, 79, 1);
   border-radius: 0px;
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
   font-size: 14px;
   font-weight: 600;
 }
@@ -419,7 +419,7 @@ export default {
 .s-block a {
   font-weight: 600;
   font-size: 15px;
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
   text-decoration: underline;
 }
 .s-card-icon-large {
@@ -431,9 +431,9 @@ export default {
 }
 .btn.btn-lg.btn-normal.blue.access-masterclass {
   background: transparent;
-  border: 2px solid #517fd9;
+  border: 2px solid rgba(19, 17, 79, 1);
   border-radius: 0px;
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
   font-size: 20px;
   font-weight: 600;
   padding: 15px 25px;
@@ -445,7 +445,7 @@ export default {
   line-height: 30px;
 }
 .skyline-img {
-  background: #517fd9;
+  background: rgba(19, 17, 79, 1);
   padding: 60px 40px;
   border-radius: 0px;
   box-shadow: 0px 2px 8px #6b98ef;
@@ -464,7 +464,7 @@ export default {
   font-size: 15px;
 }
 .office-text p:nth-child(3) span {
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
 }
 .items {
   padding: 0px 30px;

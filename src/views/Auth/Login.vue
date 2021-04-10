@@ -58,7 +58,7 @@
 					</div>
 					<div class="copy-right text-center">
 						<p>
-							Don’t have an account yet? <router-link to="/register">Sign Up</router-link>
+							Don’t have an account yet? <router-link to="/register" style="color: rgba(19, 17, 79, 1)">Sign Up</router-link>
 						</p>
 					</div>
 				</div>

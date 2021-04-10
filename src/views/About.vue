@@ -13,7 +13,7 @@
                   Bizpotta is an Integrated Business Solutions Portal for all your business needs. We aim to make things easier and within reach for you and your business!
                 </p>
                 <div class="buttons-groups">
-                  <a href="#" class="btn btn-lg btn-normal btn-filled">
+                  <a href="#" class="btn btn-lg btn-normal btn-filled blue-fill">
                     Get Started
                   </a>
                 </div>
@@ -28,7 +28,7 @@
         <div class="row mb-50">
           <div class="col-lg-7 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Research, prepare your business plan & calculate start up costs...</h3>
+              <h3 class="mb-10 code-blue">Research, prepare your business plan & calculate start up costs...</h3>
               <p>
                 We give you access to resources that will help you research about your business, prepare your business plan, and calculate how much it will cost you to start up your business successfully.
               </p>
@@ -49,7 +49,7 @@
           </div>
           <div class="col-lg-7 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Get access to available capital and funding opportunities.</h3>
+              <h3 class="mb-10 code-lemon">Get access to available capital and funding opportunities.</h3>
               <p>
                 With Bizpotta, businesses and startups are provided with access to different funding opportunities i order to raise capital for starting or growing their businesses.
               </p>
@@ -60,7 +60,7 @@
         <div class="row">
           <div class="col-lg-7 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Get business support and advice, meet business professionals.</h3>
+              <h3 class="mb-10 code-blue">Get business support and advice, meet business professionals.</h3>
               <p>
                 Bizpotta provides a business hub where you can meet and network with other business professionals. You can also get business support and management services, as well as speak to the BizDoctor for help.
               </p>
@@ -120,7 +120,7 @@
                   <span>Let’s help you build your business, gain relevant knowledge and access funding and support.</span>
                 </h1>
                 <div class="buttons-groups">
-                  <a href="#" class="btn btn-lg btn-normal btn-filled">
+                  <a href="#" class="btn btn-lg btn-normal btn-filled-white">
                     Get Started
                   </a>
                 </div>
@@ -168,13 +168,13 @@ export default {
   color: #666;
 }
 .common-heading.how>span {
-  color: #517FD9;
+  color: rgba(19, 17, 79, 1);
 }
 .btn.btn-lg.btn-normal.blue {
   background: transparent;
-  border: 2px solid #517FD9;
+  border: 2px solid rgba(19, 17, 79, 1);
   border-radius: 0px;
-  color: #517FD9;
+  color: rgba(19, 17, 79, 1);
   font-size: 14px;
   font-weight: 600;
 }
@@ -191,7 +191,7 @@ export default {
   padding-bottom: 80px;
 }
 #blue-section {
-  background: #517FD9;
+  background: rgba(19, 17, 79, 1);
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -204,7 +204,7 @@ export default {
   color: #fff;
 }
 #blue-section .buttons-groups a.btn {
-  border: 2px solid #FCFBFB;
+  border: 2px solid rgba(81, 127, 217, 0.08);
   border-radius: 2px;
   color: #fff;
 }

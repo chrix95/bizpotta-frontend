@@ -5,7 +5,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="common-heading">
-            <span style="color: #517fd9">Testimonials</span>
+            <span style="color: rgba(19, 17, 79, 1)">Testimonials</span>
             <h3 class="mb-10">What people say about us</h3>
             <span
               >We have helped thousands of businesses succeed. Hear their

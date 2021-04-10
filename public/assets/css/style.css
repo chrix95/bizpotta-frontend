@@ -393,7 +393,7 @@ a.return-btn {
 
 .w3l-login-6 .middle h4 {
   font-size: 40px;
-  color: #517FD9;
+  color: rgba(19, 17, 79, 1);
   font-weight: 600;
   text-transform: capitalize;
   line-height: 40px;
@@ -403,13 +403,13 @@ a.return-btn {
   max-width: 100%;
   margin: auto;
   margin-top: 5px;
-  color: #517FD9;
+  color: rgba(19, 17, 79, 1);
   font-size: 20px;
   font-weight: 600;
 }
 
 .w3l-login-6 .signin-form label {
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
   font-size: 18px;
   display: block;
   line-height: 33px;
@@ -441,15 +441,15 @@ a.return-btn {
 }
 
 .alt-login-btn button.btn {
-  background: #FCFBFB;
-  border: 3px solid #C4C4C4;
+  background: rgba(81, 127, 217, 0.08);
+  border: 3px solid rgba(131, 130, 130, 1);
   box-sizing: border-box;
   box-shadow: 0px 4px 8px 1px #e5e5e5;
   border-radius: 2px;
   width: 100%;
   margin: 10px auto;
   padding: 12px 13px;
-  color: #C4C4C4;
+  color: rgba(131, 130, 130, 1);
   font-weight: 600;
 }
 
@@ -459,7 +459,7 @@ a.return-btn {
 }
 
 .w3l-login-6 .signin-form button.btn {
-  background: #517FD9;
+  background: rgba(19, 17, 79, 1);
   color: #fff;
   text-decoration: none;
   padding: 0px 30px;

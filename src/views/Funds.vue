@@ -12,11 +12,11 @@
                   <span>Funding opportunities at your doorstep!</span>
                 </h1>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Don’t let funds stop your business growth ever or again! We
+                  Don’t let funds stop your business growth ever or again! <br> We
                   are here to help you secure funding opportunities.
                 </p>
                 <div class="buttons-groups">
-                  <a href="#" class="btn btn-lg btn-normal btn-filled">
+                  <a href="#" class="btn btn-lg btn-normal btn-filled blue-fill">
                     Get Started
                   </a>
                 </div>
@@ -34,7 +34,7 @@
         <div class="row mb-50">
           <div class="col-lg-7 v-center">
             <div class="common-heading text-l">
-              <h3 class="mb-10">Expand your business, grow and scale</h3>
+              <h3 class="mb-10 code-lemon">Expand your business, <br> grow and scale</h3>
               <p>
                 Our funds in Bizpotta make it possible for businesses to expand
                 and reach a larger customer base.
@@ -70,7 +70,7 @@
         <div class="row upset link-hover shape-bg2 justify-content-center">
           <div class="col-lg-3 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
             <div
-              class="s-block blue"
+              class="h-100 s-block blue"
               data-tilt
               data-tilt-max="4"
               data-tilt-speed="1000"
@@ -97,7 +97,7 @@
           </div>
           <div class="col-lg-3 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
             <div
-              class="s-block lemon"
+              class="h-100 s-block lemon"
               data-tilt
               data-tilt-max="4"
               data-tilt-speed="1000"
@@ -125,7 +125,7 @@
           </div>
           <div class="col-lg-3 col-sm-6 mt30 wow fadeInUp" data-wow-delay=".4s">
             <div
-              class="s-block blue"
+              class="h-100 s-block blue"
               data-tilt
               data-tilt-max="4"
               data-tilt-speed="1000"
@@ -158,7 +158,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="common-heading">
-              <h3 class="mb-10" style="color: #517fd9">Available funding opportunities</h3>
+              <h3 class="mb-10" style="color: rgba(19, 17, 79, 1)">Available funding opportunities</h3>
               <span
                 >Find some available opportunities for acquiring funding for your business or startup:</span
               >
@@ -166,8 +166,8 @@
           </div>
         </div>
         <div class="row justify-content-center mt-30">
-          <div class="col-lg-4">
-            <div class="w-block lemon">
+          <div class="col-lg-4 v-center">
+            <div class="h-100 w-block lemon">
               <div class="row">
                 <div class="col-lg-10">
                   <h6>Tony Elumelu Entrepreneurship Program (TEEP)</h6>
@@ -182,8 +182,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="w-block lemon">
+          <div class="col-lg-4 v-center">
+            <div class="h-100 w-block blue">
               <div class="row">
                 <div class="col-lg-10">
                   <h6>Presidential Youth Empowerment Scheme (P-YES)</h6>
@@ -198,11 +198,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="w-block lemon">
+          <div class="col-lg-4 v-center">
+            <div class="h-100 w-block lemon">
               <div class="row">
                 <div class="col-lg-10">
-                  <h6>Nigeria Youth Investment Funds</h6>
+                  <h6>Nigeria Youth Investment <br> Funds</h6>
                 </div>
                 <div class="col-lg-2 v-center">
                   <img
@@ -216,8 +216,8 @@
           </div>
         </div>
         <div class="row justify-content-center mt-30">
-          <div class="col-lg-4">
-            <div class="w-block lemon">
+          <div class="col-lg-4 v-center">
+            <div class="h-100 w-block lemon">
               <div class="row">
                 <div class="col-lg-10">
                   <h6>The Bizpotta Business Funding Programme (BBFP)</h6>
@@ -232,8 +232,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="w-block lemon">
+          <div class="col-lg-4 v-center">
+            <div class="h-100 w-block lemon">
               <div class="row">
                 <div class="col-lg-10">
                   <h6>Universal Service Provision Fund (USPF)</h6>
@@ -251,7 +251,7 @@
         </div>
         <div class="row justify-content-center mt-50">
           <div class="buttons-groups">
-            <a href="#" class="btn btn-lg btn-normal btn-filled" style="background: #517FD9; box-shadow: 0px 2px 8px #6B98EF;">
+            <a href="#" class="btn btn-lg btn-normal btn-filled blue-fill" style="background: rgba(19, 17, 79, 1); box-shadow: 0px 2px 8px #6B98EF;">
               See more opportunities
             </a>
           </div>
@@ -429,9 +429,9 @@ export default {
 }
 .btn.btn-lg.btn-normal.blue {
   background: transparent;
-  border: 2px solid #517fd9;
+  border: 2px solid rgba(19, 17, 79, 1);
   border-radius: 0px;
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
   font-size: 14px;
   font-weight: 600;
 }
@@ -448,7 +448,7 @@ export default {
   padding-bottom: 80px;
 }
 #blue-section {
-  background: #517fd9;
+  background: rgba(19, 17, 79, 1);
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -472,7 +472,7 @@ export default {
   padding: 100px 20px;
 }
 .bhv-service.bg-gradient5 .s-block.blue {
-  border-top: 7px solid #517fd9;
+  border-top: 7px solid rgba(19, 17, 79, 1);
 }
 .bhv-service.bg-gradient5 .s-block.lemon {
   border-top: 7px solid #68ab27;
@@ -490,9 +490,12 @@ export default {
   box-shadow: 0px 2px 8px #61774c;
 }
 .w-block.blue {
-  border-left: 4px solid #5C7198;
+  border-left: 4px solid rgba(19, 17, 79, 1);
   background: #FCFBFB;
-  box-shadow: 0px 2px 8px #5C7198;
+  box-shadow: 0px 2px 8px rgb(19 17 79);
+}
+.w-block h6 {
+  text-align: left;
 }
 .service-block.venture .s-block {
   padding: 0px;
@@ -505,7 +508,7 @@ export default {
 .service-block.venture .s-block a {
   font-weight: 600;
   font-size: 15px;
-  color: #517fd9;
+  color: rgba(19, 17, 79, 1);
   text-decoration: underline;
 }
 .s-card-icon-large {
@@ -524,8 +527,8 @@ export default {
 }
 .btn.btn-normal.code-blue {
   background: transparent;
-  color: #517FD9;
-  border: 3px solid #517FD9;
+  color: rgba(19, 17, 79, 1);
+  border: 3px solid rgba(19, 17, 79, 1);
   box-sizing: border-box;
   border-radius: 2px;
 }

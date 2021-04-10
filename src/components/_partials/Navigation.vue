@@ -5,8 +5,8 @@
 			<div class="menu-header">
 				<div class="dsk-logo">
 					<router-link to="/" class="nav-brand" >
-						<img src="images/logo-white.svg" alt="Logo" class="mega-white-logo" />
-						<img src="images/logo.png" alt="Logo" class="mega-darks-logo" />
+						<img src="images/logo-light.svg" alt="Logo" class="mega-darks-logo" />
+						<img src="images/logo.png" alt="Logo" class="mega-white-logo" />
 					</router-link>
 				</div>
 				<div class="custom-nav" role="navigation">
@@ -27,8 +27,8 @@
                             <router-link to="/contact" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageColor' : '']">Contact us</router-link>
 						</li>
 						<li class="header">
-                            <router-link to="/login" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageLinkColor' : '']">Sign In</router-link>
-                            <router-link to="/register" class="menu-links btn btn-download-now-black">Sign Up</router-link>
+                            <router-link to="/login" class="menu-links" :class="[currentRoute !== 'Home' ? 'subpageLinkColor' : '']" style="color: rgba(148, 242, 54, 1)">Sign In</router-link>
+                            <router-link to="/register" class="menu-links btn btn-download-now-black" style="color: #000 !important; font-weight: bold">Sign Up</router-link>
 						</li>
 					</ul>
 				</div>
@@ -96,6 +96,6 @@ export default {
 	color: #000 !important;
 }
 .subpageLinkColor {
-	color: #517fd9 !important;
+	color: rgba(19, 17, 79, 1) !important;
 }
 </style>

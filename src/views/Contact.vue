@@ -12,7 +12,7 @@
                   <span>Get in touch with us!</span>
                 </h1>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Contact us if you have any questions. We’d be quite glad to hear from you!
+                  Contact us if you have any questions. <br> We’d be quite glad to hear from you!
                 </p>
               </div>
             </div>
@@ -116,7 +116,7 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <a class="btn btn-lg btn-normal btn-filled btn-block">Submit</a>
+                    <a class="btn btn-lg btn-normal btn-filled btn-block blue-fill">Submit</a>
                   </div>
                 </div>
               </div>
