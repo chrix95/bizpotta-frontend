@@ -21,7 +21,7 @@ const routes = [
     path: '/hub',
     name: 'Hub',
     component: function () {
-      return import('../views/About.vue')
+      return import('../views/Hub.vue')
     }
   },
   {

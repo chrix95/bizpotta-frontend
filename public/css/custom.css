@@ -92,8 +92,8 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(19, 17, 79, 1);
 }
 .header-heading p {
-    font-size: 19px;
-    line-height: 25px;
+    font-size: 24px;
+    line-height: 1em;
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -545,10 +545,10 @@ a.btn.btn-lg.btn-normal.btn-filled-white {
     width: 100%;
 }
 .s-block.blue {
-    border-top: 4px solid rgba(19, 17, 79, 1);
+    border-top: 5px solid rgba(19, 17, 79, 1);
 }
 .s-block.lemon {
-    border-top: 4px solid #68AB27;
+    border-top: 5px solid #68AB27;
 }
 .s-block p i {
     position: absolute;
@@ -578,7 +578,7 @@ a.btn.btn-lg.btn-normal.btn-filled-white {
     padding: 20px;
     border: 1px solid rgb(196, 196, 196);
     border-radius: 0px;
-    box-shadow: none;
+    box-shadow: 0px 2px 8px rgba(1, 0, 14, 0.39);
     margin: 10px auto;
     font-size: 18px;
 }
