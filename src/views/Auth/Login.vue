@@ -18,12 +18,12 @@
 						<h4 class="text-center">Sign In</h4>
 						<p class="text-center">Welcome back, sign-in to continue</p>
 					</div>
-					<form action="#" method="post" class="signin-form">
+					<form  class="signin-form signup" @submit.prevent="loginUser()">
 						<div class="row">
 							<div class="col-lg-12">
 								<div class="form-input">
 									<i class="fa fa-envelope inset-icon" aria-hidden="true"></i>
-									<input type="email" name="email" placeholder="Email Address" required />
+									<input type="email" name="email" placeholder="john.doe@gmail.com" v-model="payload.email" />
 								</div>
 							</div>
 						</div>
@@ -31,8 +31,8 @@
 							<div class="col-lg-12">
 								<div class="form-input">
 									<i class="fa fa-lock inset-icon" aria-hidden="true"></i>
-									<input type="password" name="password" placeholder="Password" required />
-									<i class="fa fa-eye-slash" aria-hidden="true"></i>
+									<input :type="revealPassword ? 'text' : 'password'" name="password" placeholder="password..." v-model="payload.password" />
+									<i class="fa" :class="[ revealPassword ? 'fa-eye' : 'fa-eye-slash']" aria-hidden="true" @click="revealPassword = !revealPassword"></i>
 								</div>
 							</div>
 						</div>
@@ -41,7 +41,7 @@
 							<input type="checkbox" />
 							<span class="checkmark"></span>
 						</label>
-						<button class="btn">Sign In</button>
+						<button class="btn" type="submit" :disabled="loading">{{ loading ? "Please wait..." : "Sign In" }}</button>
 					</form>
 					<div class="alt-login-btn">
 						<div class="strike">
@@ -67,9 +67,79 @@
 	</section>
 </template>
 <script>
+import AuthenticationService from "@/services/AuthenticationService"
+import { mapState } from "vuex";
 export default {
     name: "Login",
-    components: {}
+    components: {},
+	computed: {
+        ...mapState(['loading', 'isUserLoggedIn'])
+    },
+    created() {
+        if (this.isUserLoggedIn) {
+            this.$router.push({
+                name: "Dashboard",
+            })
+        }
+    },
+	data () {
+        return {
+            payload: {
+                email: '',
+                password: ''
+            },
+			revealPassword: false
+        }
+    },
+	methods: {
+		validateLogin() {
+            if (this.payload.email) {
+                if (this.payload.password) {
+                    if (this.payload.password.length >= 6) {
+                        return true
+                    } else {
+                        this.showAlert("Password length must be greater than 6 character")
+                    }
+                } else {
+                    this.showAlert("Password is required")
+                }
+            } else {
+                this.showAlert("Email is required")
+            }
+        },
+        loginUser() {
+            if(this.validateLogin()) {
+				this.revealPassword = false
+                this.$store.dispatch('setLoading', true)
+                AuthenticationService.login(this.payload)
+                    .then((result) => {
+                        if (result.data.status == 'success') {
+							this.$store.dispatch("login", result.data.data)
+							this.$router.push({
+								name: "Dashboard"
+							})
+                        }                        
+                    })
+                    .catch((err) => {
+                        if (err.response === undefined) {
+							this.showAlert("Oops! took long to get a response", "Network error")
+                        } else {
+							this.showAlert(err.response.data.message, "Authorization error")
+                        }
+                    })
+					.finally(() => {
+						this.$store.dispatch('setLoading', false)
+					})
+            }
+        },
+		showAlert(text, title, type) {
+            this.$fire({
+                title: title ? title : "Validation error",
+                text,
+                type: type ? type : "error"
+            })
+        }
+	}
 }
 </script>
 <style scoped>

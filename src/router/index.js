@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
+import store from "../store";
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,23 @@ const routes = [
     component: function () {
       return import('../views/Auth/Register.vue')
     }
+  },
+  {
+    path: '/auth/dashboard',
+    name: 'Dashboard',
+    component: () => import('../views/Dashboard/Index.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/auth/logout',
+    name: 'Logout',
+    component: () => import('../views/Dashboard/Logout.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: "*",
+    name: "NotFound",
+    component: () => import("../views/NotFound.vue")
   }
 ]
 
@@ -65,12 +83,32 @@ const routes = [
 const router = new VueRouter({
   mode: 'hash',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  store
 })
+
+router.beforeEach((to, from, next) => {
+  const loggedIn = sessionStorage.getItem("setResponse");
+  if (to.matched.some(record => record.meta.requiresAuth) && loggedIn == null) {
+    next("/login");
+  } else {
+    next();
+  }
+});
+
+router.beforeResolve((to, from, next) => {
+  // If this isn't an initial page load.
+  if (to.name) {
+    // Start the route progress bar.
+    // NProgress.start();
+  }
+  next();
+});
 
 router.afterEach((to, from) => {
   document.title = `Bizpotta | ${to.name}`
   window.scroll(0, 0)
+  // NProgress.done();
 })
 
 export default router

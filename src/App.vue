@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style>
+.swal2-popup {
+  font-size: 0.86rem !important;
+}
 .owl-dots, .owl-nav {
   display: none !important;
 }
