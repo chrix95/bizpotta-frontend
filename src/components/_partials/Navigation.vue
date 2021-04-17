@@ -4,9 +4,12 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo">
-					<router-link to="/" class="nav-brand" >
+					<router-link to="/" class="nav-brand" v-if="currentRoute == 'Home'">
 						<img src="images/logo-light.svg" alt="Logo" class="mega-darks-logo" v-if="scrollPos < 75"/>
 						<img src="images/logo.png" alt="Logo" class="mega-darks-logo" v-else />
+					</router-link>
+					<router-link to="/" class="nav-brand" v-else>
+						<img src="images/logo.png" alt="Logo" class="mega-darks-logo" />
 					</router-link>
 				</div>
 				<div class="custom-nav" role="navigation">
