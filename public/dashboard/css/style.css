@@ -3256,7 +3256,7 @@ table.dataTable {
   overflow: hidden;
   overflow-y: auto;
   transition: 0.5s;
-  background: #FFFFFF;
+  background: #13114F;
   box-shadow: 0 0 40px #EFF1F7;
 }
 
@@ -3295,8 +3295,8 @@ table.dataTable {
 
 /* line 37, H:/admin_project/hospital/scss/_sidebar.scss */
 .sidebar .logo {
-  margin: 30px;
-  background: #fff;
+  margin: 30px auto;
+  background: transparent;
   padding: 33px 30px;
   border-radius: 7px;
 }

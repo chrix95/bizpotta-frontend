@@ -2,7 +2,7 @@
   <nav class="sidebar">
     <div class="logo d-flex justify-content-between">
       <router-link to="/">
-        <img src="images/logo.png" alt="" />
+        <img src="images/logo-light.svg" alt="" />
       </router-link>
       <div class="sidebar_close_icon d-lg-none">
         <i class="ti-close"></i>
