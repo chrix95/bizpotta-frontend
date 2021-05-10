@@ -2814,8 +2814,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 
 /* line 127, H:/admin_project/hospital/scss/_header.scss */
 .header_iner .header_right .header_notification_warp {
-  margin-right: 50px;
-  margin-left: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 @media (max-width: 575.98px) {
@@ -2879,8 +2879,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 
 /* line 183, H:/admin_project/hospital/scss/_header.scss */
 .profile_info img {
-  max-width: 69px;
-  max-height: 69px;
+  max-width: 45px;
+  max-height: 45px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -3034,12 +3034,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
   font-size: 17px;
   height: 55px;
   width: 100%;
-  padding-left: 82px;
+  padding-left: 25px;
   border: 0;
-  padding-right: 15px;
+  padding-right: 82px;
   border-bottom: 1px solid #F4F7FC;
-  background: #F5F7FD;
-  border-radius: 30px;
+  background: #fff;
+  border-radius: 0px;
+  box-shadow: 0px 1px 4px rgb(19 17 79 / 25%);
 }
 
 /* line 303, H:/admin_project/hospital/scss/_header.scss */
@@ -3058,14 +3059,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 /* line 313, H:/admin_project/hospital/scss/_header.scss */
 .serach_field-area .search_inner button {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   height: 100%;
   background: transparent;
   font-size: 12px;
   border: 0;
-  padding-left: 40px;
-  padding-right: 11px;
+  padding-left: 11px;
+  padding-right: 30px;
 }
 
 /* line 323, H:/admin_project/hospital/scss/_header.scss */
@@ -3251,7 +3252,7 @@ table.dataTable {
   z-index: 99;
   padding-bottom: 50px;
   position: fixed;
-  width: 270px;
+  width: 300px;
   z-index: 999;
   overflow: hidden;
   overflow-y: auto;
@@ -3997,7 +3998,7 @@ body::-webkit-scrollbar {
 /******** main content css here *********/
 /* line 2, H:/admin_project/hospital/scss/_main_content.scss */
 .main_content {
-  padding-left: 270px;
+  padding-left: 300px;
   width: 100%;
   padding-top: 0px !important;
   transition: .5s;

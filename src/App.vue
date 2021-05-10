@@ -12,7 +12,6 @@
         <div class="main_content_iner">
           <router-view />
         </div>
-        <footer-section />
       </section>
     </div>
   </div>
@@ -22,15 +21,13 @@ import FooterComponent from "@/components/_partials/Footer";
 import Navigation from "@/components/_partials/Navigation";
 import SideBar from '@/views/Dashboard/_partials/Sidebar.vue';
 import HeaderSection from '@/views/Dashboard/_partials/Header.vue';
-import FooterSection from '@/views/Dashboard/_partials/Footer.vue';
 export default {
   name: "App",
   components: {
     FooterComponent,
     Navigation,
     SideBar,
-    HeaderSection,
-    FooterSection
+    HeaderSection
   },
   computed: {
     currentRoute() {

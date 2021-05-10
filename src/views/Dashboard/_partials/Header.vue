@@ -27,9 +27,9 @@
               <li>
                 <a href="#"> <img src="dashboard/img/icon/bell.svg" alt="" /> </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#"> <img src="dashboard/img/icon/msg.svg" alt="" /> </a>
-              </li>
+              </li> -->
             </div>
             <div class="profile_info">
               <img src="dashboard/img/client_img.png" alt="#" />
