@@ -2635,7 +2635,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 /******** header css here *********/
 /* line 2, H:/admin_project/hospital/scss/_header.scss */
 .header_iner {
-  background-color: #fff;
+  background-color: #EFF1F7;
   position: fixed;
   top: 0;
   z-index: 99;

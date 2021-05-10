@@ -67,6 +67,36 @@ const routes = [
     meta: { requiresAuth: true }
   },
   {
+    path: '/auth/hub',
+    name: 'DashboardHub',
+    component: () => import('../views/Dashboard/Hub.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/auth/learning',
+    name: 'DashboardLearning',
+    component: () => import('../views/Dashboard/Learning.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/auth/funds',
+    name: 'DashboardFunds',
+    component: () => import('../views/Dashboard/Funds.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/auth/profile',
+    name: 'DashboardProfile',
+    component: () => import('../views/Dashboard/Profile.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/auth/settings',
+    name: 'DashboardSettings',
+    component: () => import('../views/Dashboard/Settings.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
     path: '/auth/logout',
     name: 'Logout',
     component: () => import('../views/Dashboard/Logout.vue'),

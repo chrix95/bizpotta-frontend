@@ -8,134 +8,89 @@
         <i class="ti-close"></i>
       </div>
     </div>
-    <ul id="sidebar_menu">
-      <li class="side_menu_title">
-        <span>Dashboard</span>
-      </li>
-      <li class="mm-active">
-        <a class="has-arrow" href="#" aria-expanded="false">
-          <img src="img/menu-icon/1.svg" alt="" />
-          <span>Dashboard</span>
-        </a>
-        <ul>
-          <li><a class="active" href="index-2.html">Dashboard 1</a></li>
-          <li><a href="index_2.html">Dashboard 2</a></li>
-        </ul>
-      </li>
-      <li class="side_menu_title">
-        <span>Applications</span>
-      </li>
-      <li class="">
-        <a class="has-arrow" href="#" aria-expanded="false">
-          <img src="img/menu-icon/2.svg" alt="" />
-          <span>Pages</span>
-        </a>
-        <ul>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="resister.html">Register</a></li>
-          <li><a href="forgot_pass.html">Forgot Password</a></li>
-        </ul>
-      </li>
-
-      <li class="">
-        <a class="has-arrow" href="#" aria-expanded="false">
-          <img src="img/menu-icon/3.svg" alt="" />
-          <span>Applications</span>
-        </a>
-        <ul>
-          <li><a href="mail_box.html">Mail Box</a></li>
-          <li><a href="chat.html">Chat</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </li>
-      <li class="side_menu_title">
-        <span>Components</span>
-      </li>
-      <li class="">
-        <a class="has-arrow" href="#" aria-expanded="false">
-          <img src="img/menu-icon/4.svg" alt="" />
-          <span>UI Component</span>
-        </a>
-        <ul>
-          <li>
-            <a href="#">Elements</a>
-            <ul>
-              <li><a href="buttons.html">Buttons</a></li>
-              <li><a href="dropdown.html">Dropdowns</a></li>
-              <li><a href="Badges.html">Badges</a></li>
-              <li>
-                <a href="Loading_Indicators.html">Loading Indicators</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Components</a>
-            <ul>
-              <li><a href="notification.html">Notifications</a></li>
-              <li><a href="progress.html">Progress Bar</a></li>
-              <li><a href="carousel.html">Carousel</a></li>
-              <li><a href="cards.html">cards</a></li>
-              <li><a href="Pagination.html">Pagination</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li class="">
-        <a class="has-arrow" href="#" aria-expanded="false">
-          <img src="img/menu-icon/5.svg" alt="" />
-          <span>Widgets</span>
-        </a>
-        <ul>
-          <li><a href="chart_box_1.html">Chart Boxes 1</a></li>
-          <li><a href="profilebox.html">Profile Box</a></li>
-        </ul>
-      </li>
-
-      <li class="">
-        <a class="has-arrow" href="#" aria-expanded="false">
-          <img src="img/menu-icon/6.svg" alt="" />
-          <span>Forms</span>
-        </a>
-        <ul>
-          <li>
-            <a href="#">Elements</a>
-            <ul>
-              <li><a href="data_table.html">Data Tables</a></li>
-              <li><a href="bootstrap_table.html">Grid Tables</a></li>
-              <li><a href="datepicker.html">Date Picker</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Widgets</a>
-            <ul>
-              <li><a href="Input_Selects.html">Input Selects</a></li>
-              <li><a href="Input_Mask.html">Input Mask</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li class="">
-        <a class="has-arrow" href="#" aria-expanded="false">
-          <img src="img/menu-icon/7.svg" alt="" />
-          <span>Charts</span>
-        </a>
-        <ul>
-          <li><a href="chartjs.html">ChartJS</a></li>
-          <li><a href="apex_chart.html">Apex Charts</a></li>
-          <li><a href="chart_sparkline.html">Chart sparkline</a></li>
-        </ul>
-      </li>
+    <ul id="sidebar_menu" class="main_menu">
+        <li class="main_menu_list" :class="[currentRoute === 'Dashboard' ? 'active' : '']">
+            <router-link to="/auth/dashboard">
+                <img src="images/icons/dashboard-icon-active.svg" v-if="currentRoute === 'Dashboard'" alt="">
+                <img src="images/icons/dashboard-icon.svg" v-else alt="">
+                Dashboard
+            </router-link>
+        </li>
+        <li class="main_menu_list" :class="[currentRoute === 'DashboardHub' ? 'active' : '']">
+            <router-link to="/auth/hub">
+                <img src="images/icons/hub-icon-active.svg" v-if="currentRoute === 'DashboardHub'" alt="">
+                <img src="images/icons/hub-icon.svg" v-else alt="">
+                Hub
+            </router-link>
+        </li>
+        <li class="main_menu_list" :class="[currentRoute === 'DashboardLearning' ? 'active' : '']">
+            <router-link to="/auth/learning">
+                <img src="images/icons/learning-icon-active.svg" v-if="currentRoute === 'DashboardLearning'" alt="">
+                <img src="images/icons/learning-icon.svg" v-else alt="">
+                Learning
+            </router-link>
+        </li>
+        <li class="main_menu_list" :class="[currentRoute === 'DashboardFunds' ? 'active' : '']">
+            <router-link to="/auth/funds">
+                <img src="images/icons/funds-icon-active.svg" v-if="currentRoute === 'DashboardFunds'" alt="">
+                <img src="images/icons/funds-icon.svg" v-else alt="">
+                Funds
+            </router-link>
+        </li>
+        <li class="main_menu_list" :class="[currentRoute === 'DashboardProfile' ? 'active' : '']">
+            <router-link to="/auth/profile">
+                <img src="images/icons/profile-icon-active.svg" v-if="currentRoute === 'DashboardProfile'" alt="">
+                <img src="images/icons/profile-icon.svg" v-else alt="">
+                Profile
+            </router-link>
+        </li>
+        <li class="main_menu_list" :class="[currentRoute === 'DashboardSettings' ? 'active' : '']">
+            <router-link to="/auth/settings">
+                <img src="images/icons/settings-icon-active.svg" v-if="currentRoute === 'DashboardSettings'" alt="">
+                <img src="images/icons/settings-icon.svg" v-else alt="">
+                Settings
+            </router-link>
+        </li>
+        <li class="main_menu_list">
+            <router-link to="/auth/logout"  style="color: #94F236 !important; font-weight: bold; letter-spacing: 1px">
+                <img src="images/icons/logout-icon.svg">
+                Logout
+            </router-link>
+        </li>
     </ul>
   </nav>
 </template>
 <script>
 export default {
   name: "DashboardSidebar",
+  computed: {
+    currentRoute() {
+      return this.$route.name
+    }
+  },
   data() {
     return {};
   },
 };
 </script>
-<style lang=""></style>
+<style scoped>
+ul.main_menu {
+    padding-left: 20px;
+}
+ul.main_menu>.main_menu_list {
+    margin: 20px auto;
+}
+ul.main_menu>.main_menu_list.active {
+    border: 2px solid #fff;
+}
+ul.main_menu>.main_menu_list.active>a{
+    color: #68AB27 !important;
+    background: #FFF !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    border-left: 5px solid #94F236;
+}
+ul.main_menu>.main_menu_list>a{
+    color: #FFF !important;
+}
+</style>
