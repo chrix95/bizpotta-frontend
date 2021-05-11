@@ -81,7 +81,7 @@ ul.main_menu>.main_menu_list {
     margin: 20px auto;
 }
 ul.main_menu>.main_menu_list.active {
-    border: 2px solid #fff;
+    border: none;
 }
 ul.main_menu>.main_menu_list.active>a{
     color: #68AB27 !important;

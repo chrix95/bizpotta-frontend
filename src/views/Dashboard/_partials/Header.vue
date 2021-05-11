@@ -70,5 +70,8 @@ export default {
   }
 };
 </script>
-<style lang="">
+<style scoped>
+  h3 {
+    color: #13114F;
+  }
 </style>
