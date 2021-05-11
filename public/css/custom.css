@@ -657,6 +657,14 @@ a.btn.btn-lg.btn-normal.btn-filled-white {
 }
 /* BIZPOTTA */
 /* End About us section */
+/* BIZPOTTA DASHBOARD */
+.lh-20 {
+    line-height: 20px;
+}
+.text-white {
+    color: #FFF !important;
+}
+/* BIZPOTTA DASHBOARD */
 @media only screen and (max-width: 1370px) {
     .hero-section.sub-pages {
         padding-top: 30px;

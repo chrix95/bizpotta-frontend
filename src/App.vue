@@ -56,4 +56,13 @@ export default {
 .white-background {
   background: #fff;
 }
+.white_box {
+  padding: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.box_header {
+  margin-bottom: 15px;
+} 
 </style>

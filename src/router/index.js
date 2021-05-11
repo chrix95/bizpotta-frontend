@@ -64,43 +64,43 @@ const routes = [
     path: '/auth/dashboard',
     name: 'Dashboard',
     component: () => import('../views/Dashboard/Index.vue'),
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true, pageTitle: 'Dashboard' }
   },
   {
     path: '/auth/hub',
     name: 'DashboardHub',
     component: () => import('../views/Dashboard/Hub.vue'),
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true, pageTitle: 'Hub' }
   },
   {
     path: '/auth/learning',
     name: 'DashboardLearning',
     component: () => import('../views/Dashboard/Learning.vue'),
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true, pageTitle: 'Learning' }
   },
   {
     path: '/auth/funds',
     name: 'DashboardFunds',
     component: () => import('../views/Dashboard/Funds.vue'),
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true, pageTitle: 'Funds' }
   },
   {
     path: '/auth/profile',
     name: 'DashboardProfile',
     component: () => import('../views/Dashboard/Profile.vue'),
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true, pageTitle: 'Profile' }
   },
   {
     path: '/auth/settings',
     name: 'DashboardSettings',
     component: () => import('../views/Dashboard/Settings.vue'),
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true, pageTitle: 'Settings' }
   },
   {
     path: '/auth/logout',
     name: 'Logout',
     component: () => import('../views/Dashboard/Logout.vue'),
-    meta: { requiresAuth: true }
+    meta: { requiresAuth: true, pageTitle: 'Logout' }
   },
   {
     path: "*",
@@ -136,7 +136,7 @@ router.beforeResolve((to, from, next) => {
 });
 
 router.afterEach((to, from) => {
-  document.title = `Bizpotta | ${to.name}`
+  document.title = `Bizpotta | ${to.meta.requiresAuth ? to.meta.pageTitle : to.name}`
   window.scroll(0, 0)
   // NProgress.done();
 })
