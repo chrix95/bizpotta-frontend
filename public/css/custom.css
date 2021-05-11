@@ -27,11 +27,17 @@ p {
 .mt-15 {
     margin-top: 15px;
 }
+.mtb-15 {
+    margin: 15px auto;
+}
 .mt-20 {
     margin-top: 20px;
 }
 .mb-20 {
     margin-bottom: 20px;
+}
+.mtb-20 {
+    margin: 20px auto;
 }
 .mt-30 {
     margin-top: 30px;
@@ -39,11 +45,17 @@ p {
 .mb-30 {
     margin-bottom: 30px;
 }
+.mtb-30 {
+    margin: 30px auto;
+}
 .mt-50 {
     margin-top: 50px;
 }
 .mb-50 {
     margin-bottom: 50px;
+}
+.mtb-50 {
+    margin: 50px auto;
 }
 .in-numbers {
     background: #fff;

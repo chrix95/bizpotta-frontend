@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-12" style="margin: auto 20px">
+      <div class="col-lg-12" style="margin: auto 30px">
         <h3>{{ setTitle }}</h3>
       </div>
     </div>
