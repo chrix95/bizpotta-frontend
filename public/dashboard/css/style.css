@@ -2690,7 +2690,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 @media only screen and (min-width: 1200px) {
   /* line 2, H:/admin_project/hospital/scss/_header.scss */
   .header_iner {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 
