@@ -44,9 +44,9 @@
                 Profile
             </router-link>
         </li>
-        <li class="main_menu_list" :class="[currentRoute === 'DashboardSettings' ? 'active' : '']">
-            <router-link to="/auth/settings">
-                <img src="images/icons/settings-icon-active.svg" v-if="currentRoute === 'DashboardSettings'" alt="">
+        <li class="main_menu_list" :class="[currentRoute === 'DashboardAccount' ? 'active' : '']">
+            <router-link to="/auth/account">
+                <img src="images/icons/settings-icon-active.svg" v-if="currentRoute === 'DashboardAccount'" alt="">
                 <img src="images/icons/settings-icon.svg" v-else alt="">
                 Settings
             </router-link>

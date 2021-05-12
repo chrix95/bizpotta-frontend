@@ -91,10 +91,10 @@ const routes = [
     meta: { requiresAuth: true, pageTitle: 'Profile' }
   },
   {
-    path: '/auth/settings',
-    name: 'DashboardSettings',
-    component: () => import('../views/Dashboard/Settings.vue'),
-    meta: { requiresAuth: true, pageTitle: 'Settings' }
+    path: '/auth/account',
+    name: 'DashboardAccount',
+    component: () => import('../views/Dashboard/Settings/Account.vue'),
+    meta: { requiresAuth: true, pageTitle: 'Settings', extraTitle: 'Account' }
   },
   {
     path: '/auth/logout',
