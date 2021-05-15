@@ -70,7 +70,7 @@ const routes = [
     path: '/auth/hub',
     name: 'DashboardHub',
     component: () => import('../views/Dashboard/Hub.vue'),
-    meta: { requiresAuth: true, pageTitle: 'Hub' }
+    meta: { requiresAuth: true, pageTitle: 'Bizpotta Hub' }
   },
   {
     path: '/auth/learning',
@@ -82,7 +82,7 @@ const routes = [
     path: '/auth/funds',
     name: 'DashboardFunds',
     component: () => import('../views/Dashboard/Funds.vue'),
-    meta: { requiresAuth: true, pageTitle: 'Funds' }
+    meta: { requiresAuth: true, pageTitle: 'Funding Opportunities' }
   },
   {
     path: '/auth/profile',

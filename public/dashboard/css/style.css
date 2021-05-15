@@ -3017,7 +3017,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 /******** header css end *********/
 /* line 284, H:/admin_project/hospital/scss/_header.scss */
 .serach_field-area {
-  width: 480px;
+  width: 60%;
   position: relative;
 }
 

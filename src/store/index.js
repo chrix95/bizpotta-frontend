@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
@@ -9,47 +9,53 @@ export default new Vuex.Store({
     token: null,
     user: null,
     isUserLoggedIn: false,
+    hubResult: {},
   },
   mutations: {
     SET_LOADING_STATE(state, type) {
-      state.loading = type
+      state.loading = type;
     },
     SET_USER_INFO(state, credentials) {
-      state.token = credentials.token
-      state.user = credentials.user
-      sessionStorage.setItem("setResponse", JSON.stringify(credentials))
-      state.isUserLoggedIn = true
+      state.token = credentials.token;
+      state.user = credentials.user;
+      sessionStorage.setItem("setResponse", JSON.stringify(credentials));
+      state.isUserLoggedIn = true;
       // axios.defaults.headers.common["Authorization"] = `Bearer ${credentials.data.token}`
     },
     RELOAD_USER_DATA(state, credentials) {
-      state.token = credentials.token
-      state.user = credentials.user
-      state.isUserLoggedIn = true
+      state.token = credentials.token;
+      state.user = credentials.user;
+      state.isUserLoggedIn = true;
       // axios.defaults.headers.common["Authorization"] = `Bearer ${credentials.token}`
     },
     CLEAR_USER_DATA(state) {
-      state.token = null
-      state.user = null
-      state.isUserLoggedIn = false
+      state.token = null;
+      state.user = null;
+      state.isUserLoggedIn = false;
       // delete axios.defaults.headers.common["Authorization"];
-      sessionStorage.removeItem("setResponse")
+      sessionStorage.removeItem("setResponse");
+    },
+    SET_HUB_RESULT(state, credentials) {
+      state.hubResult = credentials;
     },
   },
   actions: {
     setLoading({ commit }, type) {
-      commit('SET_LOADING_STATE', type)
+      commit("SET_LOADING_STATE", type);
     },
     login({ commit }, credentials) {
-      commit('SET_USER_INFO', credentials)
+      commit("SET_USER_INFO", credentials);
     },
     reloadUserData({ commit }, credentials) {
-      commit("RELOAD_USER_DATA", credentials)
+      commit("RELOAD_USER_DATA", credentials);
+    },
+    setHubResult({ commit }, payload) {
+      commit("SET_HUB_RESULT", payload);
     },
     logout({ commit }) {
-      commit("CLEAR_USER_DATA")
-    }
+      commit("CLEAR_USER_DATA");
+    },
   },
   getters: {},
-  modules: {
-  }
-})
+  modules: {},
+});

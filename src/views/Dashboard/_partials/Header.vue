@@ -34,8 +34,8 @@
             <div class="profile_info">
               <img src="dashboard/img/client_img.png" alt="#" />
               <div class="profile_info_iner">
-                <p>{{ fullname }}</p>
-                <h5>Dr. Robar Smith</h5>
+                <!-- <p>{{ fullname }}</p> -->
+                <h5>{{ fullname }}</h5>
                 <div class="profile_info_details">
                   <router-link to="/auth/logout">Log Out <i class="ti-shift-left"></i></router-link>
                 </div>

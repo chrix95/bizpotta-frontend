@@ -22,19 +22,19 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="images/dashboard/slider-image.svg" alt="First slide">
+              <img class="d-block w-100" src="images/dashboard/slider-image.jpg" alt="First slide">
               <div class="carousel-caption dashboard-text d-none d-md-block">
                 <h5>Banners for events highlights, ads, infographics, announcements, etc.</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="images/dashboard/slider-image.svg" alt="Second slide">
+              <img class="d-block w-100" src="images/dashboard/slider-image.jpg" alt="Second slide">
               <div class="carousel-caption dashboard-text d-none d-md-block">
                 <h5>Banners for events highlights, ads, infographics, announcements, etc.</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="images/dashboard/slider-image.svg" alt="Third slide">
+              <img class="d-block w-100" src="images/dashboard/slider-image.jpg" alt="Third slide">
               <div class="carousel-caption dashboard-text d-none d-md-block">
                 <h5>Banners for events highlights, ads, infographics, announcements, etc.</h5>
               </div>
@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-30">
       <div class="col-lg-3">
         <div class="white_box mb_30">
           <div class="box_header">

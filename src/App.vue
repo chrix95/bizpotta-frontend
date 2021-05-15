@@ -1,5 +1,6 @@
 <template>
   <div>
+    <loader v-if="loading"/>
     <div v-if="!dashboardRoute">
       <Navigation v-if="currentRoute !== 'Login' && currentRoute !== 'Register'"/>
       <router-view />
@@ -20,16 +21,20 @@
 import FooterComponent from "@/components/_partials/Footer";
 import Navigation from "@/components/_partials/Navigation";
 import SideBar from '@/views/Dashboard/_partials/Sidebar.vue';
+import Loader from '@/views/Dashboard/_partials/Loader.vue';
 import HeaderSection from '@/views/Dashboard/_partials/Header.vue';
+import { mapState } from 'vuex';
 export default {
   name: "App",
   components: {
     FooterComponent,
     Navigation,
     SideBar,
+    Loader,
     HeaderSection
   },
   computed: {
+    ...mapState(['loading']),
     currentRoute() {
       return this.$route.name
     },

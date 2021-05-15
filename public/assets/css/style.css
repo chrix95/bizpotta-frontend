@@ -241,7 +241,7 @@ a.return-btn {
   left: 4.5%;
   top: 37%;
   transform: translate(50%, -37%);
-  font-size: 30px;
+  font-size: 22px;
   color: #C4C4C4;
 }
 .fa.fa-eye-slash {
@@ -310,7 +310,7 @@ a.return-btn {
   outline: none;
   width: 100%;
   font-size: 17px;
-  padding: 15px 45px 15px 15%;
+  padding: 15px 50px;
   color: #090e0d;
   border: 2px solid #BECED0;
   box-shadow: 0px 2px 8px 0.5px #c4c4c4;
@@ -330,9 +330,9 @@ a.return-btn {
 }
 .signin-form.signup .form-input .fa.fa-eye-slash, .signin-form.signup .form-input .fa.fa-eye {
   position: absolute;
-  right: 10%;
+  right: 8%;
   top: 50%;
-  font-size: 24px;
+  font-size: 22px;
   transform: translate(0%, -70%);
   color: #C4C4C4;
   z-index: 1;
@@ -343,7 +343,7 @@ a.return-btn {
   left: 6%;
   top: 37%;
   transform: translate(50%, -37%);
-  font-size: 25px;
+  font-size: 22px;
   color: #C4C4C4;
 }
 .fa.fa-mobile.inset-icon {
@@ -351,7 +351,7 @@ a.return-btn {
   left: 8%;
   top: 37%;
   transform: translate(50%, -37%);
-  font-size: 35px;
+  font-size: 22px;
   color: #C4C4C4;
 }
 .w3l-login-6 .form-right,
