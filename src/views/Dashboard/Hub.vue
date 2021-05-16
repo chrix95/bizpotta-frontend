@@ -44,14 +44,21 @@
           </ul>
         </div>
       </div>
+      <div class="col-lg-12">
+        <pagination v-model="hubResult.current_page" :per-page="hubResult.per_page" :records="hubResult.total" @paginate="myCallback"/>
+      </div>
     </div>
   </div>
 </template>
 <script>
 import { mapState } from "vuex";
 import HubService from "@/services/HubService";
+import Pagination from 'vue-pagination-2';
 export default {
   name: "Hub",
+  components: {
+    Pagination,
+  },
   computed: {
     ...mapState(["hubResult"]),
   },
@@ -59,6 +66,9 @@ export default {
     this.fetchHubDetails();
   },
   methods: {
+    myCallback(response) {
+      console.log(response)
+    },
     fetchHubDetails() {
       this.$store.dispatch("setLoading", true);
       HubService.businesses()
@@ -118,4 +128,7 @@ p {
   color: #68ab27;
   font-size: 13px;
 }
+p.VuePagination__count.VuePagination__count {
+  font-size: 15px;
+} 
 </style>
