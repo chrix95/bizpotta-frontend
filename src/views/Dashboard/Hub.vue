@@ -13,10 +13,13 @@
       </div>
     </div>
     <div class="row mt-50 justify-content-center align-items-center" v-else>
-      <div class="col-lg-12">
+      <div class="col-lg-12" v-if="searchParam !== ''">
         <button class="btn btn btn-sm btn-primary mtb-15 btn-primary float-right" @click="resetSearch()">
           Clear selection
         </button>
+      </div>
+      <div class="col-lg-12">
+        <pagination v-model="hubResult.current_page" :per-page="hubResult.per_page" :records="hubResult.total" @paginate="myCallback"/>
       </div>
       <div class="col-lg-12">
         <div
@@ -72,9 +75,9 @@ export default {
     }
   },
   mounted() {
-    // if (this.hubResult) {
-    //   this.fetchHubDetails();
-    // }
+    if (Object.keys(this.hubResult).length === 0) {
+      this.fetchHubDetails();
+    }
   },
   methods: {
     myCallback(response) {
