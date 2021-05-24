@@ -93,6 +93,7 @@ export default {
         .then((result) => {
           if (result.data.status == "success") {
             this.$store.dispatch("setHubResult", result.data.data);
+            window.scrollTo(0,0)
           } else {
             this.showAlert(result.data.message, "Error occured");
           }
