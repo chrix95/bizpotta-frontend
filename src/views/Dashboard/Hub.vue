@@ -14,8 +14,13 @@
     </div>
     <div class="row mt-50 justify-content-center align-items-center" v-else>
       <div class="col-lg-12">
+        <button class="btn btn btn-sm btn-primary mtb-15 btn-primary float-right" @click="resetSearch()">
+          Clear selection
+        </button>
+      </div>
+      <div class="col-lg-12">
         <div
-          class="white_box mb_30"
+          class="white_box mb_20"
           v-for="(item, index) in hubResult.data"
           :key="index"
         >
@@ -23,13 +28,14 @@
             <li
               class="list-group-item d-flex justify-content-between align-items-center"
             >
+              <img src="dashboard/img/client_img.png" :alt="item.business" width="64px" />
               <div class="details">
                 <h3>{{ item.business_name }}</h3>
                 {{ JSON.parse(item.services).join(", ") }} <br />
                 <a :href="`mailto:${item.email}`">{{ item.email }}</a> <br />
                 <a :href="`tel:+${item.phone}`">{{ item.phone }}</a>
               </div>
-              <!-- <span class="percentage_completion">20% complete</span> -->
+              <span class="percentage_completion">{{ Math.round(Math.random() * 100) }} completed</span>
               <div class="view_more">
                 <a href="#">
                   Request
@@ -60,18 +66,27 @@ export default {
     Pagination,
   },
   computed: {
-    ...mapState(["hubResult"]),
+    ...mapState(["hubResult", "searchParam"]),
+    currentPage() {
+      return this.hubResult.current_page ? this.hubResult.current_page : 1
+    }
   },
   mounted() {
-    this.fetchHubDetails();
+    // if (this.hubResult) {
+    //   this.fetchHubDetails();
+    // }
   },
   methods: {
     myCallback(response) {
-      console.log(response)
+      this.fetchHubDetails(this.searchParam, response)
     },
-    fetchHubDetails() {
+    resetSearch() {
+      this.$store.dispatch("setSearchParameter", '')
+      this.fetchHubDetails(this.searchParam, 1)
+    },
+    fetchHubDetails(search = this.searchParam, page = this.currentPage) {
       this.$store.dispatch("setLoading", true);
-      HubService.businesses()
+      HubService.businesses(search, page)
         .then((result) => {
           if (result.data.status == "success") {
             this.$store.dispatch("setHubResult", result.data.data);
@@ -128,7 +143,8 @@ p {
   color: #68ab27;
   font-size: 13px;
 }
-p.VuePagination__count.VuePagination__count {
-  font-size: 15px;
-} 
+.white_box {
+  padding: 5px;
+  border-radius: 0px;
+}
 </style>

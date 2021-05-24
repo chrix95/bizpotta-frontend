@@ -9,6 +9,7 @@ export default new Vuex.Store({
     token: null,
     user: null,
     isUserLoggedIn: false,
+    searchParam: '',
     hubResult: {},
   },
   mutations: {
@@ -20,23 +21,23 @@ export default new Vuex.Store({
       state.user = credentials.user;
       sessionStorage.setItem("setResponse", JSON.stringify(credentials));
       state.isUserLoggedIn = true;
-      // axios.defaults.headers.common["Authorization"] = `Bearer ${credentials.data.token}`
     },
     RELOAD_USER_DATA(state, credentials) {
       state.token = credentials.token;
       state.user = credentials.user;
       state.isUserLoggedIn = true;
-      // axios.defaults.headers.common["Authorization"] = `Bearer ${credentials.token}`
     },
     CLEAR_USER_DATA(state) {
       state.token = null;
       state.user = null;
       state.isUserLoggedIn = false;
-      // delete axios.defaults.headers.common["Authorization"];
       sessionStorage.removeItem("setResponse");
     },
     SET_HUB_RESULT(state, credentials) {
       state.hubResult = credentials;
+    },
+    SET_SEARCH_PARAMETER(state, value) {
+      state.searchParam = value;
     },
   },
   actions: {
@@ -51,6 +52,9 @@ export default new Vuex.Store({
     },
     setHubResult({ commit }, payload) {
       commit("SET_HUB_RESULT", payload);
+    },
+    setSearchParameter({ commit }, value) {
+      commit("SET_SEARCH_PARAMETER", value);
     },
     logout({ commit }) {
       commit("CLEAR_USER_DATA");

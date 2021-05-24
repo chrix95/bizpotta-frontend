@@ -10,9 +10,9 @@
           </div>
           <div class="serach_field-area">
             <div class="search_inner">
-              <form action="#">
+              <form @submit.prevent="searchHub()">
                 <div class="search_field">
-                  <input type="text" placeholder="Search here..." />
+                  <input type="text" v-model="searchParam" placeholder="Search here..." />
                 </div>
                 <button type="submit">
                   <img src="dashboard/img/icon/icon_search.svg" alt="" />
@@ -27,14 +27,10 @@
               <li>
                 <a href="#"> <img src="dashboard/img/icon/bell.svg" alt="" /> </a>
               </li>
-              <!-- <li>
-                <a href="#"> <img src="dashboard/img/icon/msg.svg" alt="" /> </a>
-              </li> -->
             </div>
             <div class="profile_info">
               <img src="dashboard/img/client_img.png" alt="#" />
               <div class="profile_info_iner">
-                <!-- <p>{{ fullname }}</p> -->
                 <h5>{{ fullname }}</h5>
                 <div class="profile_info_details">
                   <router-link to="/auth/logout">Log Out <i class="ti-shift-left"></i></router-link>
@@ -53,11 +49,14 @@
   </div>
 </template>
 <script>
-import { mapState } from 'vuex'
+import { mapState } from 'vuex';
+import HubService from "@/services/HubService";
 export default {
   name: "DashboardHeader",
   data() {
-    return {};
+    return {
+      searchParam: ''
+    };
   },
   computed: {
     ...mapState(['user']),
@@ -67,6 +66,54 @@ export default {
     setTitle() {
       return this.$route.meta.pageTitle
     }
+  },
+  methods: {
+    searchHub() {
+      this.$store.dispatch("setLoading", true);
+      HubService.businesses(this.searchParam, 1)
+        .then((result) => {
+          if (result.data.status == "success") {
+            this.$store.dispatch("setHubResult", result.data.data);
+            this.$store.dispatch("setSearchParameter", this.searchParam)
+            this.$router.push({
+              name: 'DashboardHub'
+            })
+          } else {
+            this.showAlert(result.data.message, "Error occured");
+          }
+        })
+        .catch((err) => {
+          console.log(err.response.status)
+          if (err && err.response.status === 401) {
+            this.showAlert(
+              err.response.data.message,
+              "Authorization error"
+            );
+            this.$store.dispatch("logout")
+            this.$router.push({
+              name: "Logout"
+            })
+          }
+          if (err.response === undefined) {
+            this.showAlert(
+              "Oops! took long to get a response",
+              "Network error"
+            );
+          } else {
+            this.showAlert(err.response.data.message, "An error occured");
+          }
+        })
+        .finally(() => {
+          this.$store.dispatch("setLoading", false);
+        });
+    },
+    showAlert(text, title, type) {
+      this.$fire({
+        title: title ? title : "Validation error",
+        text,
+        type: type ? type : "error",
+      });
+    },
   }
 };
 </script>
